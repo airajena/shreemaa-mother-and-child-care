@@ -1,0 +1,170 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * SHREEMAA — Single source of truth for the entire design system.
+ * Change values here and the whole app updates.
+ * Token categories: colors, gradients, fonts, radius, shadows, spacing.
+ * Values are also mirrored in src/config/theme.ts for TS consumers.
+ */
+
+@theme inline {
+  /* radius scale */
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 3px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --radius-2xl: calc(var(--radius) + 14px);
+  --radius-3xl: calc(var(--radius) + 24px);
+  --radius-4xl: calc(var(--radius) + 36px);
+
+  /* colors → tailwind utilities */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+
+  /* fonts */
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+
+  /* shadows */
+  --shadow-soft: var(--shadow-soft);
+  --shadow-card: var(--shadow-card);
+  --shadow-elevated: var(--shadow-elevated);
+  --shadow-glow: var(--shadow-glow);
+}
+
+:root {
+  /* ── TYPOGRAPHY ───────────────────────────── */
+  --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* ── RADIUS ──────────────────────────────── */
+  --radius: 1rem;
+
+  /* ── BRAND COLORS (oklch) ────────────────── */
+  /* Soft healthcare blue/indigo, with mother-and-child warm rose accent */
+  --brand: oklch(0.55 0.18 268);
+  --brand-foreground: oklch(0.99 0.005 270);
+
+  --primary: oklch(0.55 0.18 268);          /* indigo-blue */
+  --primary-foreground: oklch(0.99 0.005 270);
+  --primary-soft: oklch(0.95 0.04 268);     /* light wash for chips/badges */
+
+  --secondary: oklch(0.96 0.02 265);
+  --secondary-foreground: oklch(0.28 0.08 268);
+
+  --accent: oklch(0.78 0.14 18);            /* warm rose for "mother & child" */
+  --accent-foreground: oklch(0.18 0.04 18);
+
+  /* surfaces */
+  --background: oklch(0.99 0.005 260);
+  --foreground: oklch(0.18 0.04 268);
+  --surface: oklch(0.97 0.018 262);         /* gradient base */
+  --surface-2: oklch(0.93 0.04 265);        /* gradient secondary */
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.04 268);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.04 268);
+
+  --muted: oklch(0.96 0.012 260);
+  --muted-foreground: oklch(0.5 0.03 265);
+
+  --destructive: oklch(0.6 0.22 27);
+  --destructive-foreground: oklch(0.99 0.005 270);
+
+  --border: oklch(0.92 0.015 262);
+  --input: oklch(0.92 0.015 262);
+  --ring: oklch(0.55 0.18 268 / 0.5);
+
+  /* ── GRADIENTS ───────────────────────────── */
+  --gradient-hero: radial-gradient(
+      ellipse 100% 70% at 50% 0%,
+      oklch(0.93 0.06 268) 0%,
+      transparent 70%
+    ),
+    linear-gradient(180deg, oklch(0.98 0.02 262) 0%, oklch(0.95 0.04 268) 100%);
+  --gradient-brand: linear-gradient(135deg, oklch(0.6 0.17 268), oklch(0.7 0.14 295));
+  --gradient-soft: linear-gradient(180deg, oklch(0.98 0.02 262) 0%, oklch(0.94 0.05 268) 100%);
+  --gradient-card-glow: linear-gradient(
+    135deg,
+    oklch(0.99 0.01 268) 0%,
+    oklch(0.96 0.04 268) 100%
+  );
+
+  /* ── SHADOWS ─────────────────────────────── */
+  --shadow-soft: 0 4px 16px -8px oklch(0.55 0.18 268 / 0.12);
+  --shadow-card: 0 12px 40px -16px oklch(0.55 0.18 268 / 0.18);
+  --shadow-elevated: 0 24px 60px -20px oklch(0.45 0.2 268 / 0.28);
+  --shadow-glow: 0 0 0 8px oklch(0.55 0.18 268 / 0.08);
+
+  /* sidebar (shadcn defaults retained) */
+  --sidebar: oklch(0.99 0.005 270);
+  --sidebar-foreground: oklch(0.18 0.04 268);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-brand { background-image: var(--gradient-brand); }
+  .bg-gradient-soft { background-image: var(--gradient-soft); }
+  .bg-gradient-card-glow { background-image: var(--gradient-card-glow); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-elevated { box-shadow: var(--shadow-elevated); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .text-balance { text-wrap: balance; }
+}
