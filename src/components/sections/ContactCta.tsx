@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Section } from "@/components/layout/Section";
 
-export function AppointmentCta() {
+export function ContactCta() {
   return (
     <Section>
       <div className="relative overflow-hidden rounded-[2rem] bg-gradient-brand p-10 text-center text-primary-foreground shadow-elevated md:p-16">
@@ -17,14 +17,11 @@ export function AppointmentCta() {
             Care for mother & child, when you need it most.
           </h2>
           <p className="mt-4 text-balance text-sm text-white/85 md:text-base">
-            Book a consultation with our specialists — same-day slots available.
+            Get in touch with our team of specialists — we are here to support you at every step.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" variant="secondary" className="h-12 rounded-full bg-white px-7 text-foreground hover:bg-white/90">
-              <Link to="/appointment">Book Appointment <ArrowRight className="size-4" /></Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="h-12 rounded-full border-white/40 bg-transparent px-7 text-white hover:bg-white/10 hover:text-white">
-              <Link to="/contact">Contact us</Link>
+              <Link to="/contact">Contact us <ArrowRight className="size-4" /></Link>
             </Button>
           </div>
         </div>

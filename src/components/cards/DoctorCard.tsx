@@ -37,7 +37,7 @@ export function DoctorCard({ doctor }: { doctor: Doctor }) {
           <li className="flex items-start gap-2"><Calendar className="mt-0.5 size-4 shrink-0 text-primary" />{doctor.avail}</li>
         </ul>
         <Button asChild className="mt-auto rounded-full bg-gradient-brand">
-          <Link to="/appointment">Book with {doctor.name.split(" ")[1]}</Link>
+          <Link to="/contact">Contact Clinic</Link>
         </Button>
       </div>
     </div>

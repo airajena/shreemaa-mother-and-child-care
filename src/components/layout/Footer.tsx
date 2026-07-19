@@ -6,7 +6,6 @@ const groups = [
   { title: "Care", links: [
     { to: "/treatments", label: "Treatments" },
     { to: "/doctors", label: "Doctors" },
-    { to: "/appointment", label: "Book Appointment" },
     { to: "/certifications", label: "Quality" },
   ]},
   { title: "Clinic", links: [

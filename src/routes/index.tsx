@@ -7,7 +7,7 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { MissionValues } from "@/components/sections/MissionValues";
 import { DoctorsSection } from "@/components/sections/DoctorsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { AppointmentCta } from "@/components/sections/AppointmentCta";
+import { ContactCta } from "@/components/sections/ContactCta";
 import { FaqSection } from "@/components/sections/FaqSection";
 
 export const Route = createFileRoute("/")({
@@ -28,7 +28,7 @@ function Home() {
       <DoctorsSection limit={4} />
       <MissionValues />
       <TestimonialsSection />
-      <AppointmentCta />
+      <ContactCta />
       <FaqSection />
     </AppShell>
   );

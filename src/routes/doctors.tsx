@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { AppShell, PageHeader } from "@/components/layout/AppShell";
 import { DoctorsSection } from "@/components/sections/DoctorsSection";
-import { AppointmentCta } from "@/components/sections/AppointmentCta";
+import { ContactCta } from "@/components/sections/ContactCta";
 
 export const Route = createFileRoute("/doctors")({
   component: Doctors,
@@ -20,7 +20,7 @@ function Doctors() {
         description="Board-certified experts with the time, training and temperament for mother and child."
       />
       <DoctorsSection />
-      <AppointmentCta />
+      <ContactCta />
     </AppShell>
   );
 }

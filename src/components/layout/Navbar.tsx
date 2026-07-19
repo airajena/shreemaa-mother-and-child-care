@@ -42,7 +42,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button asChild className="rounded-full bg-gradient-brand shadow-soft hover:opacity-95">
-            <Link to="/appointment">Book Appointment</Link>
+            <Link to="/contact">Contact Us</Link>
           </Button>
         </div>
 
@@ -69,7 +69,7 @@ export function Navbar() {
               </Link>
             ))}
             <Button asChild className="mt-2 rounded-full bg-gradient-brand">
-              <Link to="/appointment" onClick={() => setOpen(false)}>Book Appointment</Link>
+              <Link to="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
             </Button>
           </div>
         </div>

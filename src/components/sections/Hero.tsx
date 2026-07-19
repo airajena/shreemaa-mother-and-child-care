@@ -24,7 +24,7 @@ export function Hero() {
 
         <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row">
           <Button asChild size="lg" className="h-12 rounded-full bg-gradient-brand px-7 shadow-card hover:opacity-95">
-            <Link to="/appointment">Book Appointment <ArrowRight className="size-4" /></Link>
+            <Link to="/contact">Contact Us <ArrowRight className="size-4" /></Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="h-12 rounded-full border-border/80 bg-background/60 px-7 backdrop-blur">
             <Link to="/treatments">Explore Treatments</Link>
