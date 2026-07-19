@@ -1,22 +1,26 @@
 import { Link } from "@tanstack/react-router";
-import { Heart, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { contact } from "@/data/site";
 
 const groups = [
-  { title: "Care", links: [
-    { to: "/treatments", label: "Treatments" },
-    { to: "/doctors", label: "Doctors" },
-    { to: "/certifications", label: "Quality" },
-  ]},
-  { title: "Clinic", links: [
-    { to: "/about", label: "About" },
-    { to: "/testimonials", label: "Testimonials" },
-    { to: "/reviews", label: "Reviews & Ratings" },
-    { to: "/faq", label: "FAQ" },
-  ]},
-  { title: "Reach us", links: [
-    { to: "/contact", label: "Contact & Branches" },
-  ]},
+  {
+    title: "Care",
+    links: [
+      { to: "/treatments", label: "Treatments" },
+      { to: "/doctors", label: "Doctors" },
+      { to: "/certifications", label: "Quality" },
+    ],
+  },
+  {
+    title: "Clinic",
+    links: [
+      { to: "/about", label: "About" },
+      { to: "/testimonials", label: "Testimonials" },
+      { to: "/reviews", label: "Reviews & Ratings" },
+      { to: "/faq", label: "FAQ" },
+    ],
+  },
+  { title: "Reach us", links: [{ to: "/contact", label: "Contact & Branches" }] },
 ];
 
 export function Footer() {
@@ -26,22 +30,33 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <Link to="/" className="flex items-center gap-2.5">
-              <span className="grid size-10 place-items-center rounded-2xl bg-gradient-brand text-primary-foreground shadow-soft">
-                <Heart className="size-5" />
+              <span className="size-10 overflow-hidden rounded-2xl bg-white shadow-soft">
+                <img
+                  src="/shreemaa-logo.jpg"
+                  alt="Shreemaa Mother and Child Care"
+                  className="size-full object-cover"
+                />
               </span>
               <span className="flex flex-col leading-tight">
                 <span className="font-heading text-lg font-semibold">Shreemaa</span>
-                <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Mother & Child Care</span>
+                <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+                  Mother & Child Care
+                </span>
               </span>
             </Link>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Comprehensive maternal, fetal, fertility and neonatal care under one
-              roof — delivered with compassion, ethics, and clinical excellence.
+              Comprehensive maternal, fetal, fertility and neonatal care under one roof — delivered
+              with compassion, ethics, and clinical excellence.
             </p>
             <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2"><Phone className="size-4 text-primary" />{contact.phone}</li>
-              <li className="flex items-center gap-2"><Mail className="size-4 text-primary" />{contact.email}</li>
-              <li className="flex items-center gap-2"><MapPin className="size-4 text-primary" />Andheri West, Mumbai</li>
+              <li className="flex items-center gap-2">
+                <Mail className="size-4 text-primary" />
+                {contact.email}
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="size-4 text-primary" />
+                {contact.address}
+              </li>
             </ul>
           </div>
           {groups.map((g) => (
@@ -50,7 +65,10 @@ export function Footer() {
               <ul className="mt-4 space-y-2.5">
                 {g.links.map((l) => (
                   <li key={l.to}>
-                    <Link to={l.to} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                    <Link
+                      to={l.to}
+                      className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                    >
                       {l.label}
                     </Link>
                   </li>

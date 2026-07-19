@@ -3,8 +3,14 @@ import { Calendar, GraduationCap, Stethoscope, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface Doctor {
-  name: string; role: string; exp: string; consults: string; edu: string;
-  avail: string; img: string; tags: string[];
+  name: string;
+  role: string;
+  exp?: string;
+  consults?: string;
+  edu: string;
+  avail?: string;
+  img: string;
+  tags: string[];
 }
 
 export function DoctorCard({ doctor }: { doctor: Doctor }) {
@@ -17,13 +23,6 @@ export function DoctorCard({ doctor }: { doctor: Doctor }) {
           loading="lazy"
           className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute left-4 top-4 flex flex-wrap gap-1.5">
-          {doctor.tags.slice(0, 2).map((t) => (
-            <span key={t} className="rounded-full bg-background/90 px-2.5 py-1 text-[11px] font-medium text-foreground backdrop-blur">
-              {t}
-            </span>
-          ))}
-        </div>
       </div>
       <div className="flex flex-1 flex-col gap-4 p-6">
         <div>
@@ -31,11 +30,39 @@ export function DoctorCard({ doctor }: { doctor: Doctor }) {
           <p className="mt-1 text-sm text-muted-foreground">{doctor.role}</p>
         </div>
         <ul className="grid gap-2 text-sm text-muted-foreground">
-          <li className="flex items-center gap-2"><Stethoscope className="size-4 text-primary" />{doctor.exp} experience</li>
-          <li className="flex items-center gap-2"><Users className="size-4 text-primary" />{doctor.consults} consultations</li>
-          <li className="flex items-start gap-2"><GraduationCap className="mt-0.5 size-4 shrink-0 text-primary" />{doctor.edu}</li>
-          <li className="flex items-start gap-2"><Calendar className="mt-0.5 size-4 shrink-0 text-primary" />{doctor.avail}</li>
+          {doctor.exp && (
+            <li className="flex items-center gap-2">
+              <Stethoscope className="size-4 text-primary" />
+              {doctor.exp} experience
+            </li>
+          )}
+          {doctor.consults && (
+            <li className="flex items-center gap-2">
+              <Users className="size-4 text-primary" />
+              {doctor.consults} consultations
+            </li>
+          )}
+          <li className="flex items-start gap-2">
+            <GraduationCap className="mt-0.5 size-4 shrink-0 text-primary" />
+            {doctor.edu}
+          </li>
+          {doctor.avail && (
+            <li className="flex items-start gap-2">
+              <Calendar className="mt-0.5 size-4 shrink-0 text-primary" />
+              {doctor.avail}
+            </li>
+          )}
         </ul>
+        <div className="flex flex-wrap gap-2">
+          {doctor.tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full bg-primary-soft px-3 py-1 text-xs font-medium text-primary"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
         <Button asChild className="mt-auto rounded-full bg-gradient-brand">
           <Link to="/contact">Contact Clinic</Link>
         </Button>
