@@ -18,7 +18,6 @@ export const navLinks = [
   { to: "/about", label: "About" },
   { to: "/treatments", label: "Treatments" },
   { to: "/doctors", label: "Doctors" },
-  { to: "/certifications", label: "Quality" },
   { to: "/testimonials", label: "Testimonials" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -121,21 +120,19 @@ export const doctors = [
     tags: ["Infertility", "Ultrasound"],
   },
   {
-    name: "Dr. Vikram Mehta",
+    name: "Dr. Narendra Agasti",
     role: "Professor, Obstetrics & Gynaecology",
     edu: "MD (O&G), FICOG",
-    img: "/dr-vikram-mehta.png",
+    img: "/dr-narendra-agasti.png",
     tags: ["Endoscopic Surgery", "Reproductive Medicine", "Advanced Ultrasound"],
   },
   {
-    name: "Dr. Priya Nair",
-    role: "Paediatrician & Neonatologist",
-    exp: "12+ yrs",
-    consults: "15,200+",
-    edu: "MBBS, MD (Paediatrics), Fellowship in Neonatology",
-    avail: "Mon–Sun · 9:00 AM – 8:00 PM",
-    img: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=480&q=80",
-    tags: ["NICU", "Newborn Care", "Vaccination"],
+    name: "Prof Dr Manas Kumar Nayak",
+    role: "Professor Pediatrics",
+    exp: "19 years",
+    edu: "MD (Paediatrics), Fellow Neonatology",
+    img: "/dr-manas-kumar-nayak.png",
+    tags: ["Neonatal Intensive Care"],
   },
   {
     name: "Dr. Rohan Iyer",
@@ -178,30 +175,6 @@ export const testimonials = [
     quote:
       "Dr. Priya has been our paediatrician for both kids. Gentle, knowledgeable and always available.",
   },
-];
-
-export const certifications = [
-  {
-    name: "NABH Accredited",
-    desc: "National Accreditation Board for Hospitals & Healthcare Providers.",
-  },
-  {
-    name: "ISO 9001:2015",
-    desc: "Certified quality management systems across all clinical operations.",
-  },
-  {
-    name: "FOGSI Recognised",
-    desc: "Federation of Obstetric & Gynaecological Societies of India.",
-  },
-  {
-    name: "IAP Member Centre",
-    desc: "Indian Academy of Paediatrics affiliated paediatric centre.",
-  },
-  {
-    name: "Green OT Protocol",
-    desc: "Modular operation theatres with HEPA filtration and laminar flow.",
-  },
-  { name: "Level III NICU", desc: "Highest tier neonatal intensive care unit certification." },
 ];
 
 export const faqs = [

@@ -8,7 +8,6 @@ const groups = [
     links: [
       { to: "/treatments", label: "Treatments" },
       { to: "/doctors", label: "Doctors" },
-      { to: "/certifications", label: "Quality" },
     ],
   },
   {
