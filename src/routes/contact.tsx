@@ -3,7 +3,7 @@ import { AppShell, PageHeader } from "@/components/layout/AppShell";
 import { Section, SectionHeader } from "@/components/layout/Section";
 import { LocationCard } from "@/components/cards/LocationCard";
 import { branches, contact } from "@/data/site";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   component: Contact,
@@ -28,8 +28,9 @@ function Contact() {
         description="Visit us in Sailashree Vihar, Bhubaneswar, or write to our care team."
       />
       <Section className="py-10">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
+            { icon: Phone, t: "Phone", v: contact.phone },
             { icon: Mail, t: "Email", v: contact.email },
             { icon: MapPin, t: "Address", v: contact.address },
           ].map(({ icon: Icon, t, v }) => (

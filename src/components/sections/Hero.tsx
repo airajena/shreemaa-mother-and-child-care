@@ -49,7 +49,7 @@ export function Hero() {
         <div className="relative mt-16 w-full max-w-5xl">
           <div className="overflow-hidden rounded-[2rem] border border-border/60 bg-card shadow-elevated">
             <img
-              src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1600&q=80"
+              src="/hospital.png"
               alt="Shreemaa care team"
               className="aspect-[16/9] w-full object-cover"
             />
@@ -59,7 +59,7 @@ export function Hero() {
               <div className="grid size-10 place-items-center rounded-xl bg-primary-soft text-primary"><ShieldCheck className="size-5" /></div>
               <div className="text-left">
                 <p className="text-xs text-muted-foreground">Patient satisfaction</p>
-                <p className="font-heading text-lg font-semibold">98%</p>
+                <p className="font-heading text-lg font-semibold">100%</p>
               </div>
             </div>
           </div>

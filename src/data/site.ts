@@ -25,7 +25,7 @@ export const navLinks = [
 export const stats = [
   { value: "15+", label: "Years of care" },
   { value: "25k+", label: "Happy families" },
-  { value: "98%", label: "Patient satisfaction" },
+  { value: "100%", label: "Patient satisfaction" },
   { value: "24/7", label: "Emergency support" },
 ];
 
@@ -134,16 +134,6 @@ export const doctors = [
     img: "/dr-manas-kumar-nayak.png",
     tags: ["Neonatal Intensive Care"],
   },
-  {
-    name: "Dr. Rohan Iyer",
-    role: "Gynac Endoscopic Surgeon",
-    exp: "16+ yrs",
-    consults: "8,600+",
-    edu: "MBBS, MS, Fellowship in Minimal Access Surgery",
-    avail: "Tue–Sat · 12:00 PM – 7:00 PM",
-    img: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=480&q=80",
-    tags: ["Laparoscopy", "Hysteroscopy", "Oncology"],
-  },
 ];
 
 export const testimonials = [
@@ -209,10 +199,12 @@ export const branches = [
     name: "Shreemaa Mother and Child Care",
     address:
       "Flat No- E/605, Highland Residency, Sailashree Vihar, Bhubaneswar, Khorda, Odisha, 751021",
+    phone: "7749846224",
   },
 ];
 
 export const contact = {
+  phone: "7749846224",
   email: "shreemaamotherandchildcare@gmail.com",
   address:
     "Flat No- E/605, Highland Residency, Sailashree Vihar, Bhubaneswar, Khorda, Odisha, 751021",

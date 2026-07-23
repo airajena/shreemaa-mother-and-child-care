@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { contact } from "@/data/site";
 
 const groups = [
@@ -48,6 +48,10 @@ export function Footer() {
               with compassion, ethics, and clinical excellence.
             </p>
             <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2">
+                <Phone className="size-4 text-primary" />
+                {contact.phone}
+              </li>
               <li className="flex items-center gap-2">
                 <Mail className="size-4 text-primary" />
                 {contact.email}
