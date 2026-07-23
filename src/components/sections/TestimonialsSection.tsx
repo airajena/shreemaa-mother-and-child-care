@@ -10,7 +10,7 @@ export function TestimonialsSection() {
         title="Trusted care, naturally delivered"
         description="Real stories from mothers, fathers and grateful families."
       />
-      <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((t) => <TestimonialCard key={t.name} {...t} />)}
       </div>
     </Section>

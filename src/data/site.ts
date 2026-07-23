@@ -165,6 +165,20 @@ export const testimonials = [
     quote:
       "Dr. Priya has been our paediatrician for both kids. Gentle, knowledgeable and always available.",
   },
+  {
+    name: "Ipsita Goswami",
+    role: "Happy Mother",
+    rating: 5,
+    quote:
+      "Best maternity hospital in Bhubaneswar from my own experience. For me, Dr. Mamata Nayak is like a second God, such a kind and caring doctor. I am so happy that I found a doctor like Dr. Mamata. All the staff are very cooperative as well. Thank you very much for the great care during my pregnancy.",
+  },
+  {
+    name: "Tapas Ranjan Nanda",
+    role: "Grateful Father",
+    rating: 5,
+    quote:
+      "Best maternity clinic in Bhubaneswar from my own experience. Dr. Narendra Agasti is such a kind and caring doctor. I am so happy that I found a doctor like Dr. Agasti. All the staff are very cooperative as well. Thank you very much for the great care of my wife during her pregnancy.",
+  },
 ];
 
 export const faqs = [
