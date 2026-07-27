@@ -13,7 +13,7 @@ const pillars = [
 export const Route = createFileRoute("/about")({
   component: About,
   head: () => ({ meta: [
-    { title: "About — Shreemaa Mother and Child Care" },
+    { title: "About — Shreema Mother and Child Care" },
     { name: "description", content: "Our clinic, our specialities, and the values that guide everything we do." },
   ]}),
 });
@@ -22,15 +22,15 @@ function About() {
   return (
     <AppShell>
       <PageHeader
-        eyebrow="About Shreemaa"
+        eyebrow="About Shreema"
         title="Care that's been with families for generations."
-        description="Shreemaa was founded on a simple idea — that motherhood and childhood deserve unhurried, ethical, specialist-led care."
+        description="Shreema was founded on a simple idea — that motherhood and childhood deserve unhurried, ethical, specialist-led care."
       />
       <Section>
         <div className="grid items-center gap-10 md:grid-cols-2">
           <img
             src="https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1200&q=80"
-            alt="Inside Shreemaa clinic"
+            alt="Inside Shreema clinic"
             className="aspect-[4/3] w-full rounded-3xl object-cover shadow-card"
           />
           <div>

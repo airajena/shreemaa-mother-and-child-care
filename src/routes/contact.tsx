@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
   head: () => ({
     meta: [
-      { title: "Contact & Branches — Shreemaa Mother and Child Care" },
+      { title: "Contact & Branches — Shreema Mother and Child Care" },
       {
         name: "description",
         content:
@@ -23,7 +23,7 @@ function Contact() {
   return (
     <AppShell>
       <PageHeader
-        eyebrow="Reach Shreemaa"
+        eyebrow="Reach Shreema"
         title="We're here whenever you need us."
         description="Visit us in Sailashree Vihar, Bhubaneswar, or write to our care team."
       />
@@ -46,7 +46,7 @@ function Contact() {
       </Section>
 
       <Section>
-        <SectionHeader eyebrow="Our clinic" title="Visit Shreemaa Mother and Child Care" />
+        <SectionHeader eyebrow="Our clinic" title="Visit Shreema Mother and Child Care" />
         <div className="mt-12 grid gap-5">
           {branches.map((b) => (
             <LocationCard key={b.name} {...b} />

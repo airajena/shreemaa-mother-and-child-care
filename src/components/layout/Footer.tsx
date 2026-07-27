@@ -31,13 +31,13 @@ export function Footer() {
             <Link to="/" className="flex items-center gap-2.5">
               <span className="size-10 overflow-hidden rounded-2xl bg-white shadow-soft">
                 <img
-                  src="/shreemaa-logo.jpg"
-                  alt="Shreemaa Mother and Child Care"
+                  src="/shreema-logo.jpg"
+                  alt="Shreema Mother and Child Care"
                   className="size-full object-cover"
                 />
               </span>
               <span className="flex flex-col leading-tight">
-                <span className="font-heading text-lg font-semibold">Shreemaa</span>
+                <span className="font-heading text-lg font-semibold">Shreema</span>
                 <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
                   Mother & Child Care
                 </span>
@@ -81,7 +81,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border/70 pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} Shreemaa Mother and Child Care. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Shreema Mother and Child Care. All rights reserved.</p>
           <p>Compassionate care · NABH accredited · Level III NICU</p>
         </div>
       </div>

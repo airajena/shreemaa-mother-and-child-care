@@ -5,7 +5,7 @@ import { FaqSection } from "@/components/sections/FaqSection";
 export const Route = createFileRoute("/faq")({
   component: Faq,
   head: () => ({ meta: [
-    { title: "FAQ — Shreemaa Mother and Child Care" },
+    { title: "FAQ — Shreema Mother and Child Care" },
     { name: "description", content: "Frequently asked questions about our services, packages, NICU, IVF and more." },
   ]}),
 });

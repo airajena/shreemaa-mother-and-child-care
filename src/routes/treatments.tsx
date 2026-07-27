@@ -6,7 +6,7 @@ import { ContactCta } from "@/components/sections/ContactCta";
 export const Route = createFileRoute("/treatments")({
   component: Treatments,
   head: () => ({ meta: [
-    { title: "Treatments — Shreemaa Mother and Child Care" },
+    { title: "Treatments — Shreema Mother and Child Care" },
     { name: "description", content: "Specialist treatments across maternal, fetal, fertility, gynaec, paediatric and neonatal care." },
   ]}),
 });

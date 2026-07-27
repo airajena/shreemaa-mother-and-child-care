@@ -142,14 +142,7 @@ export const testimonials = [
     role: "New parents",
     rating: 5,
     quote:
-      "From our first scan to bringing our daughter home, Shreemaa felt like family. The NICU team is exceptional.",
-  },
-  {
-    name: "Meera Khanna",
-    role: "IVF journey",
-    rating: 5,
-    quote:
-      "After three years of trying, Dr. Mehta and his team gave us our miracle. The care was personal and unhurried.",
+      "From our first scan to bringing our daughter home, Shreema felt like family.",
   },
   {
     name: "Sneha Patil",
@@ -157,13 +150,6 @@ export const testimonials = [
     rating: 5,
     quote:
       "I was terrified of childbirth. The painless labour program changed everything — I felt safe and in control.",
-  },
-  {
-    name: "The Sharma family",
-    role: "Paediatric care",
-    rating: 5,
-    quote:
-      "Dr. Priya has been our paediatrician for both kids. Gentle, knowledgeable and always available.",
   },
   {
     name: "Ipsita Goswami",
@@ -210,7 +196,7 @@ export const faqs = [
 
 export const branches = [
   {
-    name: "Shreemaa Mother and Child Care",
+    name: "Shreema Mother and Child Care",
     address:
       "Flat No- E/605, Highland Residency, Sailashree Vihar, Bhubaneswar, Khorda, Odisha, 751021",
     phone: "7749846224",
@@ -219,7 +205,7 @@ export const branches = [
 
 export const contact = {
   phone: "7749846224",
-  email: "shreemaamotherandchildcare@gmail.com",
+  email: "shreemamotherandchildcare@gmail.com",
   address:
     "Flat No- E/605, Highland Residency, Sailashree Vihar, Bhubaneswar, Khorda, Odisha, 751021",
 };

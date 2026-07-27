@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * SHREEMAA — Single source of truth for the entire design system.
+ * SHREEMA — Single source of truth for the entire design system.
  * Change values here and the whole app updates.
  * Token categories: colors, gradients, fonts, radius, shadows, spacing.
  * Values are also mirrored in src/config/theme.ts for TS consumers.

@@ -50,7 +50,7 @@ export function Hero() {
           <div className="overflow-hidden rounded-[2rem] border border-border/60 bg-card shadow-elevated">
             <img
               src="/hospital.png"
-              alt="Shreemaa care team"
+              alt="Shreema care team"
               className="aspect-[16/9] w-full object-cover"
             />
           </div>

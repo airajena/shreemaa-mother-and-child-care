@@ -14,7 +14,7 @@ const breakdown = [
 export const Route = createFileRoute("/reviews")({
   component: Reviews,
   head: () => ({ meta: [
-    { title: "Reviews & Ratings — Shreemaa Mother and Child Care" },
+    { title: "Reviews & Ratings — Shreema Mother and Child Care" },
     { name: "description", content: "Patient ratings, review breakdown and clinic feedback." },
   ]}),
 });

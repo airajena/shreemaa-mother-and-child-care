@@ -13,7 +13,7 @@ export function MissionValues() {
     <Section>
       <SectionHeader
         eyebrow="Mission · Morals · Ethics"
-        title="The Shreemaa promise"
+        title="The Shreema promise"
         description="Founded on the belief that motherhood and childhood deserve the most thoughtful, ethical care medicine can offer."
       />
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

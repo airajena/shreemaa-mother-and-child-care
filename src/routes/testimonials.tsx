@@ -5,7 +5,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 export const Route = createFileRoute("/testimonials")({
   component: Testimonials,
   head: () => ({ meta: [
-    { title: "Testimonials — Shreemaa Mother and Child Care" },
+    { title: "Testimonials — Shreema Mother and Child Care" },
     { name: "description", content: "Real stories from the families we've cared for." },
   ]}),
 });

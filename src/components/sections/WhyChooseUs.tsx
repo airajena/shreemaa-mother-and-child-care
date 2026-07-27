@@ -15,7 +15,7 @@ export function WhyChooseUs() {
         <div>
           <SectionHeader
             align="left"
-            eyebrow="Why families choose Shreemaa"
+            eyebrow="Why families choose Shreema"
             title="Leading with heart and expertise."
             description="A multi-disciplinary team committed to evidence-based medicine and unhurried, human care."
           />

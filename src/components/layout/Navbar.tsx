@@ -15,13 +15,13 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2.5">
           <span className="size-9 overflow-hidden rounded-xl bg-white shadow-soft">
             <img
-              src="/shreemaa-logo.jpg"
-              alt="Shreemaa Mother and Child Care"
+              src="/shreema-logo.jpg"
+              alt="Shreema Mother and Child Care"
               className="size-full object-cover"
             />
           </span>
           <span className="flex flex-col leading-tight">
-            <span className="font-heading text-base font-semibold tracking-tight">Shreemaa</span>
+            <span className="font-heading text-base font-semibold tracking-tight">Shreema</span>
             <span className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
               Mother & Child Care
             </span>

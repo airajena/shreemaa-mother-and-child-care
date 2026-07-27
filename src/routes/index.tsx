@@ -13,7 +13,7 @@ import { FaqSection } from "@/components/sections/FaqSection";
 export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({ meta: [
-    { title: "Shreemaa Mother and Child Care — Comprehensive Maternal & Child Specialists" },
+    { title: "Shreema Mother and Child Care — Comprehensive Maternal & Child Specialists" },
     { name: "description", content: "Specialist gynecology, fetal medicine, IVF, painless labour, paediatric & neonatal care in one compassionate clinic." },
   ]}),
 });

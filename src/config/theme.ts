@@ -5,8 +5,8 @@
  */
 export const theme = {
   brand: {
-    name: "Shreemaa Mother and Child Care",
-    short: "Shreemaa",
+    name: "Shreema Mother and Child Care",
+    short: "Shreema",
     tagline: "Comprehensive maternal & child care, delivered with compassion.",
   },
   colors: {
