@@ -112,19 +112,20 @@ export const services = [
 
 export const doctors = [
   {
+    name: "Dr. Narahari Agasti",
+    role: "Professor, Obstetrics & Gynaecology",
+    exp: "20+ years",
+    edu: "MD (O&G), FICOG",
+    img: "/dr-narahari-agasti.png",
+    tags: ["Endoscopic Surgery", "Reproductive Medicine", "Advanced Ultrasound"],
+  },
+  {
     name: "Dr. Mamata Nayak",
     role: "Senior Consultant, Police Hospital",
     exp: "18 yrs",
     edu: "MBBS, MD (Obstetrics & Gynecology)",
     img: "/dr-mamata-nayak.png",
     tags: ["Infertility", "Ultrasound"],
-  },
-  {
-    name: "Dr. Narendra Agasti",
-    role: "Professor, Obstetrics & Gynaecology",
-    edu: "MD (O&G), FICOG",
-    img: "/dr-narendra-agasti.png",
-    tags: ["Endoscopic Surgery", "Reproductive Medicine", "Advanced Ultrasound"],
   },
   {
     name: "Prof Dr Manas Kumar Nayak",
@@ -163,7 +164,7 @@ export const testimonials = [
     role: "Grateful Father",
     rating: 5,
     quote:
-      "Best maternity clinic in Bhubaneswar from my own experience. Dr. Narendra Agasti is such a kind and caring doctor. I am so happy that I found a doctor like Dr. Agasti. All the staff are very cooperative as well. Thank you very much for the great care of my wife during her pregnancy.",
+      "Best maternity clinic in Bhubaneswar from my own experience. Dr. Narahari Agasti is such a kind and caring doctor. I am so happy that I found a doctor like Dr. Agasti. All the staff are very cooperative as well. Thank you very much for the great care of my wife during her pregnancy.",
   },
 ];
 
