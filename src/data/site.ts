@@ -9,7 +9,6 @@ import {
   Syringe,
   Scan,
   ShieldCheck,
-  Sun,
   Hospital,
 } from "lucide-react";
 
@@ -92,21 +91,15 @@ export const services = [
   },
   {
     icon: Baby,
-    title: "Paediatric & Neonatal",
+    title: "Pediatrics and Perinatal Care",
     desc: "Compassionate care for newborns, infants and children.",
-    slug: "paediatrics",
+    slug: "paediatrics-perinatal",
   },
   {
     icon: Hospital,
-    title: "NICU",
+    title: "Advanced Neonatal Intensive Care (Level 3)",
     desc: "Level III neonatal intensive care with expert neonatologists.",
-    slug: "nicu",
-  },
-  {
-    icon: Sun,
-    title: "Phototherapy",
-    desc: "Safe neonatal jaundice management with modern phototherapy.",
-    slug: "phototherapy",
+    slug: "nicu-level3",
   },
 ];
 
@@ -133,7 +126,7 @@ export const doctors = [
     exp: "19 years",
     edu: "MD (Paediatrics), Fellow Neonatology",
     img: "/dr-manas-kumar-nayak.png",
-    tags: ["Neonatal Intensive Care"],
+    tags: ["Advanced Neonatal Care", "Preterm Care", "Neonatal Resuscitation"],
   },
 ];
 
