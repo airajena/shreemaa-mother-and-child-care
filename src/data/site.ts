@@ -110,7 +110,14 @@ export const doctors = [
     exp: "20+ years",
     edu: "MD (O&G), FICOG",
     img: "/dr-narahari-agasti.png",
-    tags: ["Endoscopic Surgery", "Reproductive Medicine", "Advanced Ultrasound"],
+    tags: [
+      "Endoscopic Surgery",
+      "Reproductive Medicine",
+      "Advanced Ultrasonography",
+      "Vaginal Surgery",
+      "High Risk Pregnancy",
+      "Cosmetic Gynaecology",
+    ],
   },
   {
     name: "Dr. Mamata Nayak",
@@ -118,7 +125,7 @@ export const doctors = [
     exp: "18 yrs",
     edu: "MBBS, MD (Obstetrics & Gynecology)",
     img: "/dr-mamata-nayak.png",
-    tags: ["Infertility", "Ultrasound"],
+    tags: ["Endoscopic Surgery", "Vaginal Surgery", "High Risk Pregnancy", "Infertility"],
   },
   {
     name: "Prof Dr Manas Kumar Nayak",
